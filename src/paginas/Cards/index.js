@@ -48,7 +48,6 @@ const MarkdownContainer = styled.div`
     pre, blockquote {
         margin-bottom: 1.5rem;
         padding: 1rem;
-        background-color: #eaeaea;
         border-radius: 5px;
     }
 
@@ -58,6 +57,7 @@ const MarkdownContainer = styled.div`
 
     @media (max-width: 1100px) {
         p {
+            
             margin-bottom: 2rem;
         }
     }

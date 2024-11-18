@@ -89,15 +89,54 @@ const MinhaFoto = styled.img`
     height: 200px;
   }
 `;
+export const LinkBotao = styled.button`
+  background-color: #0a66c2; 
+  color: white; 
+  border: none; 
+  border-radius: 5px; 
+  padding: 10px 20px; 
+  font-size: 16px; 
+  font-weight: bold; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
 
+  &:hover {
+    background-color: #004182;
+  }
+
+  &:active {
+    background-color: #002954; 
+  }
+`;
+export const LinkContainer = styled.div`
+  display: flex; 
+  gap: 10px;
+  margin-top: 20px; 
+  justify-content: center; 
+  align-items: center; 
+`;
 
 function Banner() {
   return (
     <BannerContainer>
       <Apresentacao>
+        <LinkContainer>
+          <a
+            href="https://www.linkedin.com/in/guilherme-ferreira-silva-a855a1275/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <LinkBotao>LinkedIn</LinkBotao>
+          </a>
+          <a href="https://github.com/Guilherme-boss/" target="_blank" rel="noopener noreferrer">
+            <LinkBotao>GitHub</LinkBotao>
+          </a>
+        </LinkContainer>
+
         <Titulo>hello guys!</Titulo>
         <Paragrafo>
-            Welcome to my personal space! I am Guilherme Ferreira. Here, I share various knowledge, and I hope you learn something new :)        </Paragrafo>
+            Welcome to my personal space! I am Guilherme Ferreira. Here, I share various knowledge, and I hope you learn something new :)
+        </Paragrafo>
       </Apresentacao>
       <MinhaFoto src={minhafoto} alt="foto sorrindo" />
     </BannerContainer>

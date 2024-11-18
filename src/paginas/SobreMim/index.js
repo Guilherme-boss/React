@@ -69,12 +69,11 @@ const Paragrafo = styled.p`
     }
 `;
 
-function SobreMim(titulo, ) {
+function SobreMim(titulo) {
     return (
         <PostModelo fotoCapa={fotoCapa}>
-            <h1>{titulo = "Get get to know me"}</h1>
         
-            <Subtitulo>My journey</Subtitulo>
+            <Subtitulo>About me and My journey</Subtitulo>
 
             <Paragrafo>
                 I am a developer passionate about creating efficient and scalable software solutions. I graduated in Systems Analysis and Development from the Catholic University of Brasília and have experience in developing RESTful APIs, system integration, and databases. With technical skills in C#, JavaScript, React, and the Nest.js framework, I am always looking for new challenges to apply my knowledge and continuously learn.

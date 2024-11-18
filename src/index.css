@@ -8,7 +8,7 @@
   --azul-escuro: #041833;
   --azul-medio: #1875E8;
   --cor-fonte-principal: #041833;
-  --cor-fonte-post: #444444;
+  --cor-fonte-post: #fffefe;
   --branco: #FFF;
   --fonte-principal: 'Roboto', sans-serif;
   --fonte-secundaria: 'Lora', serif;
@@ -26,10 +26,6 @@
 a, button, input, textarea {
   font: inherit;
   color: inherit;
-}
-
-button {
-  background-color: transparent;
 }
 
 a {
