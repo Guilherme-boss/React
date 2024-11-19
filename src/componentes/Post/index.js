@@ -5,9 +5,9 @@ import styled from 'styled-components';
 const PostContainer = styled.div`
     text-align: center;
     width: 280px;
-    min-height: 460px; /* Altura mínima para manter o alinhamento */
+    min-height: 460px; 
     padding: 1.2rem;
-    margin-bottom: 2rem; /* Espaço entre os cards */
+    margin-bottom: 2rem; 
     border-radius: 20px;
     background-color: #3a4655;
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);

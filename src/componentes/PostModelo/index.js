@@ -37,8 +37,6 @@ const PostConteudoContainer = styled.div`
 
 
 
-
-
 function PostModelo({titulo,children}) {
     return(
         <PostModeloContainer>

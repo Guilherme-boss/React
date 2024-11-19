@@ -7,7 +7,7 @@ const NaoEncontrada = styled.div`
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: linear-gradient(135deg, #f0f4f8, #d9e2ec); /* Gradiente de cor suave */
+    background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
     text-align: center;
     color: #333;
     padding: 0 1.5rem;
@@ -23,8 +23,7 @@ const ErrorCode = styled.h1`
     font-weight: bold;
     margin: 0;
     color: #ff6b6b; /* Vermelho suave */
-    text-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); /* Sombra mais suave e profunda */
-
+    text-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
     @media (max-width: 768px) {
         font-size: 4rem;
     }

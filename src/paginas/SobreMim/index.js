@@ -13,17 +13,15 @@ const Subtitulo = styled.h3`
 
     &::after {
         display: block;
-        width: 80px; /* Aumenta o comprimento da linha */
+        width: 80px; 
         height: 4px;
         background-color: #1abc9c;
-        margin: 0.75rem auto 0; /* Ajusta a margem para um espaço mais equilibrado */
+        margin: 0.75rem auto 0; 
         border-radius: 2px;
-        transition: width 0.3s ease; /* Efeito de transição suave ao passar o mouse */
-    }
+        transition: width 0.3s ease; 
 
     &:hover::after {
-        width: 100px; /* Expande a linha no hover */
-    }
+        width: 100px; 
 
     @media (max-width: 1024px) {
         font-size: 2.2rem;
