@@ -12,12 +12,19 @@ const BannerContainer = styled.div`
 
   @media (max-width: 1024px) {
     padding: 3rem 8%;
+    gap: 10rem;
   }
 
   @media (max-width: 768px) {
     flex-direction: column;
     padding: 2rem 5%;
     text-align: center;
+    height: auto;
+    gap: 3rem;
+  }
+
+  @media (max-width: 480px) {
+    padding: 1.5rem 3%;
   }
 `;
 
@@ -45,7 +52,7 @@ const Titulo = styled.h1`
   }
 
   @media (max-width: 480px) {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
 `;
 
@@ -62,10 +69,14 @@ const Paragrafo = styled.p`
     line-height: 1.6rem;
     max-width: 100%;
   }
+
+  @media (max-width: 480px) {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
 `;
 
 const MinhaFoto = styled.img`
-
   width: 220px;
   height: 300px;
   object-fit: cover; 
@@ -85,10 +96,12 @@ const MinhaFoto = styled.img`
   }
 
   @media (max-width: 480px) {
-    width: 150px;
-    height: 200px;
+    width: 140px;
+    height: 190px;
+    margin-top: 1rem;
   }
 `;
+
 export const LinkBotao = styled.button`
   background-color: #0a66c2; 
   color: white; 
@@ -107,14 +120,26 @@ export const LinkBotao = styled.button`
   &:active {
     background-color: #002954; 
   }
+
+  @media (max-width: 480px) {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
 `;
+
 export const LinkContainer = styled.div`
   display: flex; 
   gap: 10px;
   margin-top: 20px; 
   justify-content: center; 
   align-items: center; 
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 8px;
+  }
 `;
+
 
 function Banner() {
   return (

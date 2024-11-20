@@ -5,9 +5,9 @@ import styled from 'styled-components';
 const PostContainer = styled.div`
     text-align: center;
     width: 280px;
-    min-height: 460px; /* Altura mínima para manter o alinhamento */
+    min-height: 460px; 
     padding: 1.2rem;
-    margin-bottom: 2rem; /* Espaço entre os cards */
+    margin-bottom: 2rem;
     border-radius: 20px;
     background-color: #3a4655;
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
@@ -33,6 +33,16 @@ const PostContainer = styled.div`
         width: 320px;
         padding: 1.25rem;
     }
+
+    @media (max-width: 768px) {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    @media (max-width: 480px) {
+        min-height: 400px;
+        padding: 0.8rem;
+    }
 `;
 
 const Capa = styled.img`
@@ -47,8 +57,11 @@ const Capa = styled.img`
         transform: scale(1.08);
         box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
     }
-`;
 
+    @media (max-width: 480px) {
+        border-radius: 12px 12px 0 0;
+    }
+`;
 
 const Titulo = styled.h2`
     font-family: var(--fonte-secundaria);
@@ -69,6 +82,15 @@ const Titulo = styled.h2`
     @media (max-width: 1100px) {
         font-size: 1.5rem;
         margin: 1rem 0;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 1.2rem;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 1rem;
+        line-height: 1.5rem;
     }
 `;
 
@@ -97,8 +119,18 @@ const BotaoLer = styled.button`
     }
 
     @media (max-width: 1100px) {
-        padding: 0.75rem 1.5rem;
-        font-size: 1.25rem;
+        padding: 0.7rem 1.3rem;
+        font-size: 1.1rem;
+    }
+
+    @media (max-width: 768px) {
+        padding: 0.6rem 1.2rem;
+        font-size: 1rem;
+    }
+
+    @media (max-width: 480px) {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
     }
 `;
 

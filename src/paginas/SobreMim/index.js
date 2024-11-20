@@ -13,36 +13,59 @@ const Subtitulo = styled.h3`
 
     &::after {
         display: block;
-        width: 80px; /* Aumenta o comprimento da linha */
+        width: 80px; 
         height: 4px;
         background-color: #1abc9c;
-        margin: 0.75rem auto 0; /* Ajusta a margem para um espaço mais equilibrado */
+        margin: 0.75rem auto 0;
         border-radius: 2px;
-        transition: width 0.3s ease; /* Efeito de transição suave ao passar o mouse */
+        transition: width 0.3s ease;
     }
 
     &:hover::after {
-        width: 100px; /* Expande a linha no hover */
+        width: 100px;
     }
 
     @media (max-width: 1024px) {
         font-size: 2.2rem;
         margin-bottom: 1.75rem;
+
+        &::after {
+            width: 70px;
+        }
+
+        &:hover::after {
+            width: 90px;
+        }
     }
 
     @media (max-width: 744px) {
         font-size: 1.9rem;
         line-height: 2.2rem;
         margin-bottom: 1.5rem;
+
+        &::after {
+            width: 60px;
+        }
+
+        &:hover::after {
+            width: 80px;
+        }
     }
 
     @media (max-width: 480px) {
         font-size: 1.6rem;
         line-height: 2.1rem;
         margin-bottom: 1.25rem;
+
+        &::after {
+            width: 50px;
+        }
+
+        &:hover::after {
+            width: 70px;
+        }
     }
 `;
-
 
 const Paragrafo = styled.p`
     font-size: 1.5rem;
@@ -66,10 +89,12 @@ const Paragrafo = styled.p`
     @media (max-width: 480px) {
         font-size: 1rem;
         line-height: 1.8rem;
+        padding: 0 0.5rem; 
     }
 `;
 
-function SobreMim(titulo) {
+
+function SobreMim() {
     return (
         <PostModelo fotoCapa={fotoCapa}>
         

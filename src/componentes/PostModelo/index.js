@@ -22,6 +22,11 @@ const Titulo = styled.h2`
     }
 
     @media (max-width: 744px) {
+        padding: 0 2rem;
+        font-size: 2.5rem;
+    }
+
+    @media (max-width: 480px) {
         padding: 0 1rem;
         font-size: 2rem;
     }
@@ -30,11 +35,18 @@ const Titulo = styled.h2`
 const PostConteudoContainer = styled.div`
     padding: 3.5rem 7.5rem 4.5rem;
 
+    @media (max-width: 1024px) {
+        padding: 3rem 4rem 3.5rem;
+    }
+
     @media (max-width: 744px) {
-        padding: 2rem 1rem 1.5rem;
+        padding: 2rem 2rem 2rem;
+    }
+
+    @media (max-width: 480px) {
+        padding: 1.5rem 1rem 1.5rem;
     }
 `;
-
 
 
 
