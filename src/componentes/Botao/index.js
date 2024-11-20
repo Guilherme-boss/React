@@ -18,7 +18,7 @@ const BotaoDeVoltar = styled.button`
         background: linear-gradient(135deg, var(--azul-escuro), var(--azul-medio));
         box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
         transform: translateY(-8px);
-        filter: brightness(1.1); /* Aumenta o brilho do botão no hover */
+        filter: brightness(1.1); 
     }
 
     &:active {

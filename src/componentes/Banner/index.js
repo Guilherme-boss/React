@@ -44,8 +44,8 @@ const Titulo = styled.h1`
   font-family: var(--fonte-secundaria);
   font-size: 3.5rem;
   margin: 0;
-  letter-spacing: 1px; /* Aumenta o espaçamento entre letras */
-  color: #1abc9c; /* Cor destacada para o título */
+  letter-spacing: 1px; 
+  color: #1abc9c; 
 
   @media (max-width: 768px) {
     font-size: 2.8rem;
@@ -61,7 +61,7 @@ const Paragrafo = styled.p`
   font-size: 1.5rem;
   line-height: 1.7rem;
   margin-top: 1rem;
-  color: #CBD5E0; /* Cor cinza claro para contraste */
+  color: #CBD5E0; 
   max-width: 500px;
 
   @media (max-width: 768px) {
@@ -148,12 +148,11 @@ function Banner() {
         <LinkContainer>
           <a
             href="https://www.linkedin.com/in/guilherme-ferreira-silva-a855a1275/"
-            target="_blank"
-            rel="noopener noreferrer"
+            rel='link '
           >
             <LinkBotao>LinkedIn</LinkBotao>
           </a>
-          <a href="https://github.com/Guilherme-boss/" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/Guilherme-boss/" rel="noopener noreferrer">
             <LinkBotao>GitHub</LinkBotao>
           </a>
         </LinkContainer>
